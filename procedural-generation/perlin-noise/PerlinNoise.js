@@ -1,3 +1,5 @@
+// Código fonte original do algoritmo de Perlin Noise: https://github.com/joeiddon/perlin
+
 export class PerlinNoise {
     constructor() {
         this.memory = {}
@@ -45,7 +47,7 @@ export class PerlinNoise {
         let xf = Math.floor(x);
         let yf = Math.floor(y);
 
-        //interpolate
+        // Interpolação
         let tl = this.#dot_prod_grid(x, y, xf,   yf);
         let tr = this.#dot_prod_grid(x, y, xf + 1, yf);
         let bl = this.#dot_prod_grid(x, y, xf, yf + 1);
