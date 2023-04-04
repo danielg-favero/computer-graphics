@@ -1,3 +1,5 @@
+// Código inspirado em: https://www.quantstart.com/articles/Matrix-Matrix-Multiplication-on-the-GPU-with-Nvidia-CUDA/
+
 %%cu
 
 #include <stdio.h>
